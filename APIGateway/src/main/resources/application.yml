@@ -25,9 +25,8 @@ spring:
             - StripPrefix=1
             - name: RequestRateLimiter
               args:
-                redis-rate-limiter:
-                      replanishRate: 5
-                      burstCapacity: 10
+                redis-rate-limiter.replenishRate: 5
+                redis-rate-limiter.burstCapacity: 10
       discovery:
          locator:
           enabled: true
